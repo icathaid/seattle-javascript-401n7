@@ -1,0 +1,19 @@
+{
+  "name": "seattle-javascript-401n7",
+  "version": "1.0.0",
+  "description": "## Lecture & Classroom Rhythm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icathaid/seattle-javascript-401n7.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icathaid/seattle-javascript-401n7/issues"
+  },
+  "homepage": "https://github.com/icathaid/seattle-javascript-401n7#readme"
+}

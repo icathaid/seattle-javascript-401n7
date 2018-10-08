@@ -1,0 +1,25 @@
+# Error-First Callbacks
+
+- In order to operate asynchronously, JavaScript utilizes a programming style known as ''Continuation-Passing Style'', which calls a function, and passes a secondary function in as a parameter.  The secondary function will be run when the first function has been completed.  This is also known as a 'callback'.
+
+- In order to prevent codebases from becoming unmanageable messes, with every module having a different function signature, it is important for developers to all use the same, standardized format.  In JS, this is known as the ''error-first callback''.  
+
+    -- The first argument of the callback is reserved for an error object.  This way, any errors that are thrown will be caught and returned before any other code runs.
+
+    -- The second argument of the callback is reserved for any successful response data.  If no error is thrown, the error argument is set to null, and the code continues running as normal.
+
+ex:
+
+fs.readFile('/bill.txt', function(err, data) {
+    if(err){
+        console.log('if an error is thrown, it will be returned here');
+        return;
+    }
+    console.log('otherwise code continues to run here');
+})
+
+fs.readFile takes in two arguments, a filepath, and a callback function.
+the callback function takes in two arguments, an error and data.
+if the error is not null, it will be caught and returned first before the other code can run.
+
+
