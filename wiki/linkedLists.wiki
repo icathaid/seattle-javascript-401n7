@@ -1,0 +1,8 @@
+# Linked Lists
+
+- I like to think of linked lists like the land navigation courses we used to train on in the military, which are basically gigantic physical linked lists.
+
+Land navigation courses consist of a large area intersperced with markers.  Each marker has a storage area where coordinates to the next marker can be placed.  You begin at the start point (head node), and receive directions to the physical location of the second marker.  This is exactly how a linked list node is set up: it has a starting point with a value (in this case its own location), and instructions for finding the next point in the chain.
+Much like actual linked lists, the instructions in each marker can be changed out, to direct the code/person to the next point.
+
+Most of these observations are just interesting similarities, but sometimes it helps to think my way through a whiteboard problem if I imagine myself going through my code with a map and a compass, thinking "What would ''I'' have to do to get to the correct destination?"
